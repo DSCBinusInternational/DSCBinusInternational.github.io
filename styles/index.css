@@ -1,0 +1,28 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  background-color: black;
+  color: white;
+  border: solid white;
+  margin: 2em auto;
+  text-align: center;
+}
+
+body > img {
+  max-width: 600px;
+}
+
+ul {
+  margin-top: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+}
