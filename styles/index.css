@@ -8,14 +8,9 @@ body {
   text-align: center;
 }
 
-body > img {
-  max-width: 600px;
-}
-
-ul {
-  margin-top: auto;
-  display: inline-block;
-  text-align: left;
+img{
+  width: 80%;
+  padding: 10%;
 }
 
 a {
@@ -25,4 +20,37 @@ a {
 
 a:hover {
   color: lightgreen;
+}
+li{
+  list-style: none;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.item{
+  padding-top: 5%;
+  font-size: 20px;
+}
+.people{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.cards img{
+  border-radius: 50%;
+  width: 40%;
+  padding:0;
+}
+.woop:hover{
+  animation: change-color 1s infinite;
+}
+
+@keyframes change-color{
+  0%{color:blue;}
+  33%{color:red;}
+  66%{color:yellow}
+  100%{color:green}
 }
