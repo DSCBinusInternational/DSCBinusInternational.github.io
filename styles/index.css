@@ -57,7 +57,7 @@ li{
 }
 .item:hover{
   color: lightgreen;
-  animation: jump 1s infinite;
+  animation: jump 1s 1;
 }
 
 .people{
@@ -127,9 +127,19 @@ img.social{
 }
 
 @keyframes jump {
-  0% { transform: translateY(4px); }
-  25% { transform: translateY(0px); }
-  50% { transform: translateY(4px); }
-  75% { transform: translateY(0px); }
-  100% { transform: translateY(4px); }
+  /* 0% { transform: translateY(0px); }
+  15% { transform: translateY(6px); }
+  30% { transform: translateY(0px); }
+  45% { transform: translateY(4px); }
+  60% { transform: translateY(0px); }
+  75% { transform: translateY(2px); }
+  90% { transform: translateY(0px); }
+  100% { transform: translateY(1px); } */
+  0% {transform: translateY(0px);}
+  14.3% {transform: translateY(-16px)}
+  28.6% {transform:translateY(0px)}
+  42.9% {transform:translateY(-8px)}
+  57.2%{transform:translateY(0px)}
+  71.5%{transform:translateY(-4px)}
+  100% {transform:translateY(0px)}
 }
