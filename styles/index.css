@@ -1,3 +1,7 @@
+:root {
+  --gdsc-spacing: 64px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   max-width: 800px;
@@ -60,4 +64,15 @@ li{
   74%{color:yellow}
   75%{color:green}
   100%{color:green}
+}
+
+#gdsc-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: var(--gdsc-spacing);
+}
+
+#gdsc-text pre {
+  margin-left: calc(var(--gdsc-spacing) * -1);
 }
