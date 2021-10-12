@@ -3,9 +3,12 @@ body {
   max-width: 800px;
   background-color: black;
   color: white;
-  border: solid white;
+  /* border: solid white; */
   margin: 2em auto;
   text-align: center;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(../floor.png) 12 round;
 }
 
 img{
@@ -45,12 +48,16 @@ li{
   padding:0;
 }
 .woop:hover{
-  animation: change-color 1s infinite;
+  animation: change-color 2s infinite;
 }
 
 @keyframes change-color{
   0%{color:blue;}
-  33%{color:red;}
-  66%{color:yellow}
+  24%{color:blue;}
+  25%{color:red;}
+  49%{color:red;}
+  50%{color:yellow}
+  74%{color:yellow}
+  75%{color:green}
   100%{color:green}
 }
