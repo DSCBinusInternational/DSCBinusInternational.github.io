@@ -71,15 +71,25 @@ li{
   flex-direction: row;
   justify-content: center;
   margin-left: var(--gdsc-spacing);
+  font-weight: bolder;
 }
 
 #gdsc-text pre {
   margin-left: calc(var(--gdsc-spacing) * -1);
+  animation: wave-title 1s infinite;
+}
+
+@keyframes wave-title {
+  0% { transform: translateY(2px); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(2px); }
 }
 
 #gdsc-text pre:nth-child(1) {
-  color: red;
+  color: lightcoral;
+  animation-delay: 0.2s;
 }
 #gdsc-text pre:nth-child(2) {
   color: green;
+  animation-delay: 0.4s;
 }
