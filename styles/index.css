@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu&display=swap');
 :root {
   --gdsc-spacing: 64px;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   max-width: 800px;
-  background-color: black;
+  background-color: #100c08;
   color: white;
   /* border: solid white; */
   margin: 2em auto;
@@ -15,19 +17,27 @@ body {
   border-image: url(../floor.png) 12 round;
 }
 
+h1{
+  font-size: min(3vw,36px);
+}
+p{
+  font-family: "Ubuntu",sans-serif;
+}
 img{
   width: 80%;
   padding: 10%;
 }
 
 a {
+  font-size: medium;
   color: green;
   text-decoration: none;
 }
 
-a:hover {
+a:hover{
   color: lightgreen;
 }
+
 li{
   list-style: none;
 }
@@ -36,10 +46,20 @@ li{
   flex-direction: row;
   justify-content: space-evenly;
 }
-.item{
-  padding-top: 5%;
-  font-size: 20px;
+.back-button{
+  display: flex;
+  justify-content: left;
 }
+.item{
+  padding-top: 2%;
+  font-size: 20px;
+  padding-bottom: 2%;
+}
+.item:hover{
+  color: lightgreen;
+  animation: jump 1s infinite;
+}
+
 .people{
   display: flex;
   justify-content: space-evenly;
@@ -55,17 +75,6 @@ li{
   animation: change-color 2s infinite;
 }
 
-@keyframes change-color{
-  0%{color:blue;}
-  24%{color:blue;}
-  25%{color:red;}
-  49%{color:red;}
-  50%{color:yellow}
-  74%{color:yellow}
-  75%{color:green}
-  100%{color:green}
-}
-
 #gdsc-text {
   display: flex;
   flex-direction: row;
@@ -79,18 +88,12 @@ li{
   animation: wave-title 1s infinite;
 }
 
-@keyframes wave-title {
-  0% { transform: translateY(2px); }
-  50% { transform: translateY(-2px); }
-  100% { transform: translateY(2px); }
-}
-
 #gdsc-text pre:nth-child(1) {
   color: rgb(66, 133, 244);
   animation-delay: 0.2s;
 }
 #gdsc-text pre:nth-child(2) {
-  color: rgb(219 68 55);
+  color: rgb(219, 68, 55);
   animation-delay: 0.4s;
 }
 #gdsc-text pre:nth-child(3) {
@@ -100,4 +103,33 @@ li{
 #gdsc-text pre:nth-child(4) {
   color: rgb(15, 157, 88);
   animation-delay: 0.8s;
+}
+img.social{
+  height:100px;
+  width: auto;
+}
+
+@keyframes change-color{
+  0%{color:rgb(66, 133, 244);}
+  24%{color:rgb(66, 133, 244);}
+  25%{color:rgb(219, 68, 55);}
+  49%{color:rgb(219, 68, 55);}
+  50%{color:rgb(244, 180, 0)}
+  74%{color:rgb(244, 180, 0)}
+  75%{color:rgb(15, 157, 88)}
+  100%{color:rgb(15, 157, 88)}
+}
+
+@keyframes wave-title {
+  0% { transform: translateY(2px); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(2px); }
+}
+
+@keyframes jump {
+  0% { transform: translateY(4px); }
+  25% { transform: translateY(0px); }
+  50% { transform: translateY(4px); }
+  75% { transform: translateY(0px); }
+  100% { transform: translateY(4px); }
 }
