@@ -29,9 +29,10 @@ img{
 }
 
 a {
-  font-size: medium;
+  font-size: min(3vw,16px);
   color: rgba(96, 196, 3, 0.945);
   text-decoration: none;
+  padding: 0px 5px;
 }
 
 a:hover{
@@ -40,6 +41,7 @@ a:hover{
 
 li{
   list-style: none;
+  
 }
 .container{
   display: flex;
@@ -90,10 +92,14 @@ li{
   padding: 5%;
   flex-direction: row;
 }
-.event-card img{
+.about-card img{
   border-radius: 50%;
-  width: 200px;
+  min-width: 70px;
+  max-width: 10vw;
   padding:0;
+}
+.about-card h2,.about-card h3{
+  font-size: min(3vw,16px);
 }
 .woop:hover{
   animation: change-color 2s infinite;
