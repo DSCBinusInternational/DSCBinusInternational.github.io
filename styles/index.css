@@ -108,6 +108,10 @@ img.social{
   height:100px;
   width: auto;
 }
+img.logo{
+  height:100px;
+  width: auto;
+}
 
 @keyframes change-color{
   0%{color:rgb(66, 133, 244);}
