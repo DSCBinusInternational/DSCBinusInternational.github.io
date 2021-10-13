@@ -60,14 +60,39 @@ li{
   animation: jump 1s 1;
 }
 
-.people{
+.mentor-container{
   display: flex;
   justify-content: space-evenly;
   padding: 5%;
+  flex-direction: row;
 }
-.cards img{
+.presenter-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  flex-direction: row;
+}
+.comm-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  flex-direction: row;
+}
+.secdec-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  flex-direction: row;
+}
+.proman-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  flex-direction: row;
+}
+.event-card img{
   border-radius: 50%;
-  width: 40%;
+  width: 200px;
   padding:0;
 }
 .woop:hover{
