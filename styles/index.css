@@ -108,7 +108,6 @@ li{
   padding: 5%;
 }
 
-
 .about-card img{
   border-radius: 50%;
   min-width: 70px;
@@ -290,6 +289,30 @@ img.logo{
   z-index: 1;
 }
 
+.event-desc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.event-desc img{
+  width: 40%;
+  padding: 20px;
+}
+
+.event-desc p{
+  text-align: left;
+}
+
+iframe{
+  /* height: 60%;
+  width: 70%; */
+  margin: 5%;
+}
+
+.event img{
+  width: 50%;
+}
 @keyframes dsc-dot1 {
   0%, 100% {
     opacity: 0;
