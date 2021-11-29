@@ -28,6 +28,18 @@ img{
   padding: 10%;
 }
 
+h3{
+  animation: clickLink 4s 1;
+}
+
+@keyframes clickLink{
+  0%{color: rgba(96, 196, 3, 0.945);}
+  25%{color: lightgreen;}
+  50%{color: rgba(96, 196, 3, 0.945);}
+  75%{color: lightgreen;}
+  1000%{color: rgba(96, 196, 3, 0.945);}
+}
+
 a {
   font-size: min(3vw,16px);
   color: rgba(96, 196, 3, 0.945);
@@ -60,7 +72,7 @@ li{
   padding-bottom: 2%;
   color: rgba(96, 196, 3, 0.945);
 }
-.item:hover{
+.jumper:hover div{
   color: lightgreen;
   animation: jump 1s 1;
 }
