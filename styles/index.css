@@ -697,12 +697,18 @@ iframe {
     12.5% {
         transform: translateY(-16px);
     }
+    24% {
+        color: var(--color-blue);
+    }
     25% {
         transform: translateY(0px);
         color: var(--color-red);
     }
     37.5% {
         transform: translateY(-16px);
+    }
+    49% {
+        color: var(--color-red);
     }
     50% {
         transform: translateY(0px);
@@ -711,12 +717,18 @@ iframe {
     62.5% {
         transform: translateY(-16px);
     }
+    74% {
+        color: var(--color-yellow);
+    }
     75% {
         transform: translateY(0px);
         color: var(--color-green);
     }
     87.5% {
         transform: translateY(-16px);
+    }
+    99% {
+        color: var(--color-green);
     }
     100% {
         transform: translateY(0px);
