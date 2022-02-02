@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu&display=swap');
+:root {
+    --color-red: #ea4335;
+    --color-blue: #4285f4;
+    --color-yellow: #fbbc05;
+    --color-green: #34a853;
+}
+
 body {
     font-family: 'Press Start 2P', cursive;
     max-width: 800px;
@@ -69,6 +76,29 @@ li {
 
 .desc-a:hover {
     text-decoration: underline;
+}
+
+.desc-center {
+    font-family: "Ubuntu", sans-serif;
+    height: auto;
+    margin: 4%;
+    text-align: center;
+}
+
+.google-blue {
+    color: var(--color-blue);
+}
+
+.google-red {
+    color: var(--color-red);
+}
+
+.google-yellow {
+    color: var(--color-yellow);
+}
+
+.google-green {
+    color: var(--color-green);
 }
 
 
